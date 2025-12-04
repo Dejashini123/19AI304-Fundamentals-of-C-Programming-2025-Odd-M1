@@ -27,20 +27,21 @@ To build a C program that prints integer, float,character, and string literals o
    Stop
 # Program:
 ```
-#include<stdio.h>
-int main(){
-    char ch;
-    printf("Enter a character: ");
-    scanf("%c",&ch);
-    (ch>='0' && ch<='9')?printf("Digit\n"):
-    ((ch>='A' && ch<='Z')||(ch>='a' && ch<='z'))?
-    ((ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'||ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')?printf("Vowel\n"):printf("Consonant\n"))
-    :printf("Special Symbol\n");
+#include <stdio.h>
+
+int main() {
+    printf("Integer literal: %d, Size: %lu bytes\n", 10, sizeof(10));
+    printf("Float literal: %f, Size: %lu bytes\n", 3.14, sizeof(3.14));
+    printf("Character literal: %c, Size: %lu bytes\n", 'A', sizeof('A'));
+    printf("String literal: %s, Size: %lu bytes\n", "Hello C", sizeof("Hello C"));
+
     return 0;
 }
+
 ```
 # Output:
-<img width="472" height="244" alt="image" src="https://github.com/user-attachments/assets/ff41d63a-ee74-40e4-b1dc-ca70ad9c3dfc" />
+<img width="817" height="352" alt="image" src="https://github.com/user-attachments/assets/06d7dd4a-e990-4169-94d3-05a21d682d25" />
+
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
